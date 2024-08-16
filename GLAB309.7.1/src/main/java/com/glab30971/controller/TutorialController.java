@@ -49,8 +49,7 @@ public class TutorialController {
     public void deleteTutorial(@PathVariable("id") long id) {
         tutorialServices.deleteTutorial(id);
     }
-    /* To delete a tutorials record, you simply use the deleteById() method provided by the tutorialRepository. Then you pass in the id of the record you want to delete.
-     */
+
     @DeleteMapping("/tutorials")
     public void deleteAllTutorials() {
         tutorialServices.deleteAllTutorials();
